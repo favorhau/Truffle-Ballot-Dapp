@@ -1,40 +1,91 @@
-# Create React App example
+# Truffle-Ballot-Dapp
 
-## How to use
+![Node](https://img.shields.io/static/v1?label=react&message=Node.js&color=blue&logo=react)
+![Truffle](https://img.shields.io/static/v1?label=Ethereum&message=Truffle&color=orange&logo=Ethereum)
+![Solidity](https://img.shields.io/static/v1?label=Solidity&message=Ethereum&color=green&logo=Solidity)
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+## Language
 
-<!-- #default-branch-switch -->
+[简体中文](https://github.com/favorhau/Truffle-Ballot-Dapp/blob/main/README_zh.md) |
+[Engish](https://github.com/favorhau/Truffle-Ballot-Dapp/blob/main/README.md)
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/create-react-app
-cd create-react-app
+
+## Overview
+
+The Truffle-Ballot-Dapp is a Ethereum-Based Ballot demo, including the features like giving ballot to the person you want based on smart-contart and making sure that any address(voters) only have one ballot.
+
+Front-End page is as follow:
+
+[![ouAgm9.png](https://z3.ax1x.com/2021/11/28/ouAgm9.png)](https://imgtu.com/i/ouAgm9)
+
+## Dependencies
+
+1. **Npm** 
+
+For more information , Get from https://nodejs.org/en/
+
+2. **Metamask**
+
+A crypto wallet & gateway to blockchain apps, Get from https://metamask.io
+
+3. **Yarn(optional)**
+
+Yarn is a package manager that doubles down as project manager, which can fix some bug from NPM.
+
+## Quick Start
+
+You should install the [Dependencies](#Dependencies) above before getting start.
+
+1. Install Truffle globally and run the unbox command.
+
+```bash
+npm install -g truffle
 ```
 
-Install it and run:
+2. Run the development console.
+```
+truffle develop
+```
 
-```sh
+3. You can *alternatively* choose one step as follow.
+- Compile and migrate the smart contracts. Note inside the development console we don't preface commands with truffle.(**Recommand**)
+```
+compile
+migrate
+```
+- Using Ganache-CLI for build **(Alternatively)**.
+
+> It's as easy as modifying the config file! Check out [the documentation](https://www.trufflesuite.com/docs/truffle/reference/configuration#networks) on adding network configurations. Depending on the port you're using, you'll also need to update line 29 of client/src/utils/getWeb3.js.
+
+
+4. Start React pages
+
+In the client directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
+
+```
+cd client
+```
+And then ,
+
+```
 npm install
-npm start
+```
+**or** if you have Yarn
+```
+yarn
 ```
 
-or:
+5. Open the URL at Chrome or FireFox with metamask
 
-<!-- #default-branch-switch -->
+You should login the Account with metamask and have a ballot.
+To pay the gas you should have some ETH. You can import the privacy key in metamask and get about 100 ETH in your test network.
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/create-react-app)
+## Limitation
 
-## The idea behind the example
+- [x] Adding new candidates
+- [x] Anonymous Accounts to ballot
+- [x] Privacy protect method
 
-<!-- #default-branch-switch -->
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app).
-It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/guides/interoperability/#styled-components).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/getting-started/templates/) section.
+## To-Do-List
+- [ ] Using random-response for ballot result
+- [ ] Take some privacy method such as differential privacy (DP) to protect the Accounts' ballot result.
