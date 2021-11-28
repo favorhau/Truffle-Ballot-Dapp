@@ -7,7 +7,7 @@
 ## Language
 
 [简体中文](https://github.com/favorhau/Truffle-Ballot-Dapp/blob/main/README_zh.md) |
-[Engish](https://github.com/favorhau/Truffle-Ballot-Dapp/blob/main/README.md)
+Engish
 
 
 ## Overview

@@ -4,13 +4,13 @@
 ![Truffle](https://img.shields.io/static/v1?label=Ethereum&message=Truffle&color=orange&logo=Ethereum)
 ![Solidity](https://img.shields.io/static/v1?label=Solidity&message=Ethereum&color=green&logo=Solidity)
 
-# Language
+## 语言
 
-[简体中文]() |
-[Engish]()
+简体中文 |
+[Engish](https://github.com/favorhau/Truffle-Ballot-Dapp/blob/main/README.md)
 
 
-## Overview
+## 概述
 
 The Truffle-Ballot-Dapp is a Ethereum-Based Ballot demo, including 
 
