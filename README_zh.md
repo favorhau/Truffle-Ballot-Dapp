@@ -59,7 +59,7 @@ migrate
 - 使用`Ganache-CLI`部署合约 **(可选)**
 > 需要对`truffle-config.js`文件进行修改,可以参考[官方文档](https://www.trufflesuite.com/docs/truffle/reference/configuration#networks)的内容添加网络参数。根据你所采用的端口，编辑`client/src/utils/getWeb3.js`第29行的代码更新端口参数。
 
-**⚠️如果使用此步，则可跳过第2步，并且运行下面的打包部署命令
+**⚠️如果使用此步，则可跳过第2步，并且运行下面的打包部署命令**
 
 ```
 truffle compile
