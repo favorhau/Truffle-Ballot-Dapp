@@ -12,7 +12,7 @@ Engish
 
 ## Overview
 
-The Truffle-Ballot-Dapp is a Ethereum-Based Ballot demo, including the features like giving ballot to the person you want based on smart-contart and making sure that any address(voters) only have one ballot.
+The Truffle-Ballot-Dapp is a Ethereum-Based Ballot demo, including the features like giving ballot to the person you want based on smart-contart and making sure that any address(voters) only have one ballot. Further more, The program contains ABI(Application Binary Interface) to link Contract Layer to Application Layer. Fore more detail, you could `clone` this repositories.
 
 Front-End page is as follow:
 
@@ -36,7 +36,7 @@ Yarn is a package manager that doubles down as project manager, which can fix so
 
 You should install the [Dependencies](#Dependencies) above before getting start.
 
-1. Install Truffle globally and run the unbox command.
+1. Install `Truffle` globally.
 
 ```bash
 npm install -g truffle
@@ -58,6 +58,12 @@ migrate
 > It's as easy as modifying the config file! Check out [the documentation](https://www.trufflesuite.com/docs/truffle/reference/configuration#networks) on adding network configurations. Depending on the port you're using, you'll also need to update line 29 of client/src/utils/getWeb3.js.
 
 
+**⚠️Note That if you do this, you can dump the step 3. and run bash as follow**
+```
+truffle compile
+truffle migrate
+```
+
 4. Start React pages
 
 In the client directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
@@ -70,12 +76,12 @@ And then ,
 ```
 npm install
 ```
-**or** if you have Yarn
+**or** if you have `Yarn`
 ```
 yarn
 ```
 
-5. Open the URL at Chrome or FireFox with metamask
+5. Open the URL at `Chrome` or `FireFox` with `metamask`
 
 You should login the Account with metamask and have a ballot.
 To pay the gas you should have some ETH. You can import the privacy key in metamask and get about 100 ETH in your test network.
@@ -89,3 +95,11 @@ To pay the gas you should have some ETH. You can import the privacy key in metam
 ## To-Do-List
 - [ ] Using random-response for ballot result
 - [ ] Take some privacy method such as differential privacy (DP) to protect the Accounts' ballot result.
+
+## Reference
+
+https://github.com/truffle-box/react-box
+
+https://goethereumbook.org/en/
+
+https://zhuanlan.zhihu.com/p/38452188
