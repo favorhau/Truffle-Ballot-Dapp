@@ -82,9 +82,9 @@ To pay the gas you should have some ETH. You can import the privacy key in metam
 
 ## Limitation
 
-- [*] Adding new candidates
-- [*] Anonymous Accounts to ballot
-- [*] Privacy protect method
+- [ ] Adding new candidates
+- [ ] Anonymous Accounts to ballot
+- [ ] Privacy protect method
 
 ## To-Do-List
 - [ ] Using random-response for ballot result
